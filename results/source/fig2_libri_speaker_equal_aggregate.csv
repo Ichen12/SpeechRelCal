@@ -1,0 +1,9 @@
+method,regime,normalized_average_precision
+full_affine,heldout_pair_tuple,0.4253553221523663
+full_affine,zero_shot_triple,0.2491032702800038
+intercept_only,heldout_pair_tuple,0.4121071600127354
+intercept_only,zero_shot_triple,0.2380623754390115
+sigmoid,heldout_pair_tuple,0.2724504251614361
+sigmoid,zero_shot_triple,0.1771861982234943
+slope_only,heldout_pair_tuple,0.3257470527667354
+slope_only,zero_shot_triple,0.2062136294789178

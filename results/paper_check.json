@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "discrepancies": [],
+  "paper_sha256": "5d3c0841edb2a29eb54b970abba2525e2f4b1638d5adade8837973f0b01b2496",
+  "checks": {
+    "table1_values": 40,
+    "fig3a_values": 50,
+    "fig3a_significance_marks": 50,
+    "source_estimates": 110,
+    "source_intervals": 280
+  },
+  "full_affine_gain_range_pp": [
+    5.029229858520428,
+    15.29048969909302
+  ],
+  "intercept_recovery_percent": [
+    84.64774145377211,
+    98.53936979089188
+  ],
+  "atomic_metrics": {
+    "msp": {
+      "sigmoid": {
+        "ece": 0.2543172096504819,
+        "nll": 0.6752195144215514,
+        "brier": 0.2371263257179749
+      },
+      "full_affine": {
+        "ece": 0.019990620559904984,
+        "nll": 0.4135615142549501,
+        "brier": 0.13906486395380055
+      }
+    },
+    "libri": {
+      "sigmoid": {
+        "ece": 0.2778887578478882,
+        "nll": 0.6376534854143242,
+        "brier": 0.22166106064708202
+      },
+      "full_affine": {
+        "ece": 0.005822042372775167,
+        "nll": 0.32860687353448453,
+        "brier": 0.10695794438514938
+      }
+    }
+  },
+  "max_full_state_auroc_change": 3.5569625578268926e-08,
+  "scope": "Final-paper rounded numerical values and aggregate-source consistency; no audio experiments rerun.",
+  "implementation_notes": [
+    "Ordinal historical code uses inclusive >=/<= thresholds; paper notation uses strict >/<. See docs/reproduction.md.",
+    "Full-state ordinal calibration retains sklearn default L2 regularization; event affine BCE is unregularized."
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "vs_sigmoid": {
+    "comparisons": 30,
+    "minimum_delta_pp": 4.860604569200781,
+    "maximum_delta_pp": 15.290489699093024,
+    "shared_seed_across_fixed_partitions": {
+      "positive": 30,
+      "negative": 0,
+      "includes_zero": 0
+    },
+    "partition_and_seed_sensitivity": {
+      "positive": 30,
+      "negative": 0,
+      "includes_zero": 0
+    }
+  },
+  "full_affine_vs_sigmoid": {
+    "comparisons": 15,
+    "minimum_delta_pp": 4.940972592023665,
+    "maximum_delta_pp": 15.290489699093024,
+    "shared_seed_across_fixed_partitions": {
+      "positive": 15,
+      "negative": 0,
+      "includes_zero": 0
+    },
+    "partition_and_seed_sensitivity": {
+      "positive": 15,
+      "negative": 0,
+      "includes_zero": 0
+    }
+  },
+  "raw_prior_vs_natural": {
+    "comparisons": 20,
+    "minimum_delta_pp": -0.47621496318555906,
+    "maximum_delta_pp": 0.12343586129463055,
+    "shared_seed_across_fixed_partitions": {
+      "positive": 2,
+      "negative": 9,
+      "includes_zero": 9
+    },
+    "partition_and_seed_sensitivity": {
+      "positive": 0,
+      "negative": 9,
+      "includes_zero": 11
+    }
+  },
+  "corrected_vs_natural": {
+    "comparisons": 20,
+    "minimum_delta_pp": -0.18722031093903432,
+    "maximum_delta_pp": 0.10549699627996965,
+    "shared_seed_across_fixed_partitions": {
+      "positive": 2,
+      "negative": 4,
+      "includes_zero": 14
+    },
+    "partition_and_seed_sensitivity": {
+      "positive": 2,
+      "negative": 4,
+      "includes_zero": 14
+    }
+  },
+  "corrected_by_dataset": {
+    "librittsp": {
+      "comparisons": 8,
+      "minimum_delta_pp": -0.18722031093903432,
+      "maximum_delta_pp": 0.10549699627996965,
+      "shared_seed_across_fixed_partitions": {
+        "positive": 2,
+        "negative": 4,
+        "includes_zero": 2
+      },
+      "partition_and_seed_sensitivity": {
+        "positive": 2,
+        "negative": 4,
+        "includes_zero": 2
+      }
+    },
+    "msp": {
+      "comparisons": 12,
+      "minimum_delta_pp": -0.04205947128441056,
+      "maximum_delta_pp": 0.020976585128818392,
+      "shared_seed_across_fixed_partitions": {
+        "positive": 0,
+        "negative": 0,
+        "includes_zero": 12
+      },
+      "partition_and_seed_sensitivity": {
+        "positive": 0,
+        "negative": 0,
+        "includes_zero": 12
+      }
+    }
+  },
+  "intercept_recovery_range": {
+    "min": 0.821033327762467,
+    "max": 0.9853936979089186
+  },
+  "intervals": "pointwise_not_multiplicity_adjusted",
+  "prior_grid": [
+    0.25,
+    1.0,
+    4.0
+  ],
+  "prior_grid_unit": "positive_vs_negative_odds_multiplier"
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "matched_relation_deepsets",
+    "right_method": "product",
+    "metric": "normalized_average_precision",
+    "estimate": 0.005477000680491537,
+    "speaker_only_ci": [
+      0.0033625960184474855,
+      0.007711296342187266
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.003053843355918512,
+      0.00822635089470992
+    ],
+    "seed_within_fixed_partition": [
+      0.003164602846456018,
+      0.00801314482140286
+    ],
+    "partition_and_seed_sensitivity": [
+      0.0008602352002937573,
+      0.010163865770808389
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "matched_relation_deepsets",
+    "right_method": "product",
+    "metric": "normalized_average_precision",
+    "estimate": 0.00548733447607029,
+    "speaker_only_ci": [
+      0.002852052926188227,
+      0.008245277916159015
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.0028032742372703424,
+      0.008313132214185413
+    ],
+    "seed_within_fixed_partition": [
+      0.002815151292108995,
+      0.008277047147597288
+    ],
+    "partition_and_seed_sensitivity": [
+      0.002815347064721613,
+      0.00825355716539824
+    ]
+  }
+]

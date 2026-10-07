@@ -1,0 +1,29 @@
+{
+  "scope": "first observed positive pointwise interval on fixed tested budgets, not a universal minimum label threshold",
+  "observations": [
+    {
+      "regime": "heldout_pair_tuple",
+      "method": "positive_log_linear",
+      "first_tested_positive_shared_seed_across_fixed_partitions": 0.05,
+      "first_tested_positive_partition_and_seed_sensitivity": 0.05
+    },
+    {
+      "regime": "heldout_pair_tuple",
+      "method": "deepsets",
+      "first_tested_positive_shared_seed_across_fixed_partitions": null,
+      "first_tested_positive_partition_and_seed_sensitivity": null
+    },
+    {
+      "regime": "zero_shot_triple",
+      "method": "positive_log_linear",
+      "first_tested_positive_shared_seed_across_fixed_partitions": null,
+      "first_tested_positive_partition_and_seed_sensitivity": null
+    },
+    {
+      "regime": "zero_shot_triple",
+      "method": "deepsets",
+      "first_tested_positive_shared_seed_across_fixed_partitions": null,
+      "first_tested_positive_partition_and_seed_sensitivity": null
+    }
+  ]
+}

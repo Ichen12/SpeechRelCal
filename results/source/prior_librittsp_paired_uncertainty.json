@@ -1,0 +1,920 @@
+[
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only_low",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0012343586129463055,
+    "speaker_only_ci": [
+      8.128593461827576e-05,
+      0.002415603578901053
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      8.128593461827576e-05,
+      0.002415603578901053
+    ],
+    "seed_within_fixed_partition": [
+      8.128593461827576e-05,
+      0.002415603578901053
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0006249549686069468,
+      0.002970451559182116
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only_low_corrected",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0004777268712514188,
+    "speaker_only_ci": [
+      -0.0007191864682799553,
+      -0.00026739553656192355
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.0007191864682799553,
+      -0.00026739553656192355
+    ],
+    "seed_within_fixed_partition": [
+      -0.0007191864682799553,
+      -0.00026739553656192355
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0007612788700042365,
+      -0.0002282269730393264
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only_high",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.004282477414905809,
+    "speaker_only_ci": [
+      -0.005409804387729695,
+      -0.0031636236308542095
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.005409804387729695,
+      -0.0031636236308542095
+    ],
+    "seed_within_fixed_partition": [
+      -0.005409804387729695,
+      -0.0031636236308542095
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.006523425884612994,
+      -0.002056074610464797
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only_high_corrected",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": 4.701091081362945e-05,
+    "speaker_only_ci": [
+      -0.000251385274345288,
+      0.0003056288114794833
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.000251385274345288,
+      0.0003056288114794833
+    ],
+    "seed_within_fixed_partition": [
+      -0.000251385274345288,
+      0.0003056288114794833
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.00045657329660585624,
+      0.0004232324725567002
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_low",
+    "right_method": "full_affine_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0026104215427373532,
+    "speaker_only_ci": [
+      -0.003724361657576725,
+      -0.0015832506436270792
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.003724361657576725,
+      -0.0015832506436270792
+    ],
+    "seed_within_fixed_partition": [
+      -0.003724361657576725,
+      -0.0015832506436270792
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.003945342355300242,
+      -0.0011567677248898193
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_low_corrected",
+    "right_method": "full_affine_natural",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0010549699627996965,
+    "speaker_only_ci": [
+      0.00029765674298290804,
+      0.0018379821334161947
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.00029765674298290804,
+      0.0018379821334161947
+    ],
+    "seed_within_fixed_partition": [
+      0.00029765674298290804,
+      0.0018379821334161947
+    ],
+    "partition_and_seed_sensitivity": [
+      8.726646986832003e-05,
+      0.002085572243475935
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_high",
+    "right_method": "full_affine_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0013561022452542966,
+    "speaker_only_ci": [
+      -0.002269694703916067,
+      -0.0004231637307402362
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.002269694703916067,
+      -0.0004231637307402362
+    ],
+    "seed_within_fixed_partition": [
+      -0.002269694703916067,
+      -0.0004231637307402362
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0024333703313928114,
+      -0.00017914581967983382
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_high_corrected",
+    "right_method": "full_affine_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0018722031093903432,
+    "speaker_only_ci": [
+      -0.002794013357074186,
+      -0.0010626832423901063
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.002794013357074186,
+      -0.0010626832423901063
+    ],
+    "seed_within_fixed_partition": [
+      -0.002794013357074186,
+      -0.0010626832423901063
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0029448031513723337,
+      -0.0007706127429957298
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only_low",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.14089109346424558,
+    "speaker_only_ci": [
+      0.1334262815568945,
+      0.14844217240376897
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.1334262815568945,
+      0.14844217240376897
+    ],
+    "seed_within_fixed_partition": [
+      0.1334262815568945,
+      0.14844217240376897
+    ],
+    "partition_and_seed_sensitivity": [
+      0.12490621077601483,
+      0.16088982506200983
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only_natural",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.13965673485129929,
+    "speaker_only_ci": [
+      0.13214466347645654,
+      0.14733163989817286
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.13214466347645654,
+      0.14733163989817286
+    ],
+    "seed_within_fixed_partition": [
+      0.13214466347645654,
+      0.14733163989817286
+    ],
+    "partition_and_seed_sensitivity": [
+      0.12333435761506688,
+      0.16052490837664626
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only_high",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.13537425743639347,
+    "speaker_only_ci": [
+      0.12776673243888634,
+      0.14315868587858577
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.12776673243888634,
+      0.14315868587858577
+    ],
+    "seed_within_fixed_partition": [
+      0.12776673243888634,
+      0.14315868587858577
+    ],
+    "partition_and_seed_sensitivity": [
+      0.11852370909308606,
+      0.15712086711810513
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_low",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.15029447544819285,
+    "speaker_only_ci": [
+      0.14215290968232902,
+      0.15858943377435936
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.14215290968232902,
+      0.15858943377435936
+    ],
+    "seed_within_fixed_partition": [
+      0.14215290968232902,
+      0.15858943377435936
+    ],
+    "partition_and_seed_sensitivity": [
+      0.13391969280754817,
+      0.17089539099070478
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_natural",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.15290489699093024,
+    "speaker_only_ci": [
+      0.14455002537819603,
+      0.16139911969008153
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.14455002537819603,
+      0.16139911969008153
+    ],
+    "seed_within_fixed_partition": [
+      0.14455002537819603,
+      0.16139911969008153
+    ],
+    "partition_and_seed_sensitivity": [
+      0.13608346399024304,
+      0.17337148087923537
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_high",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.15154879474567592,
+    "speaker_only_ci": [
+      0.14303052081816128,
+      0.16030082161273415
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.14303052081816128,
+      0.16030082161273415
+    ],
+    "seed_within_fixed_partition": [
+      0.14303052081816128,
+      0.16030082161273415
+    ],
+    "partition_and_seed_sensitivity": [
+      0.13442910203682232,
+      0.17256643587625295
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_low",
+    "right_method": "intercept_only_low",
+    "metric": "normalized_average_precision",
+    "estimate": 0.009403381983947287,
+    "speaker_only_ci": [
+      0.007293298542816549,
+      0.01154068594236432
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.007293298542816549,
+      0.01154068594236432
+    ],
+    "seed_within_fixed_partition": [
+      0.007293298542816549,
+      0.01154068594236432
+    ],
+    "partition_and_seed_sensitivity": [
+      0.006565921222097722,
+      0.011867540891102044
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_natural",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": 0.013248162139630947,
+    "speaker_only_ci": [
+      0.010743642730534235,
+      0.01586843962879028
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.010743642730534235,
+      0.01586843962879028
+    ],
+    "seed_within_fixed_partition": [
+      0.010743642730534235,
+      0.01586843962879028
+    ],
+    "partition_and_seed_sensitivity": [
+      0.010211747485904046,
+      0.016061409983469374
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine_high",
+    "right_method": "intercept_only_high",
+    "metric": "normalized_average_precision",
+    "estimate": 0.01617453730928246,
+    "speaker_only_ci": [
+      0.01343664554361354,
+      0.019079194356829563
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.01343664554361354,
+      0.019079194356829563
+    ],
+    "seed_within_fixed_partition": [
+      0.01343664554361354,
+      0.019079194356829563
+    ],
+    "partition_and_seed_sensitivity": [
+      0.01236306811631436,
+      0.01984502348391695
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only_low",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0013126848871620272,
+    "speaker_only_ci": [
+      -0.0031766370519451686,
+      0.0006899975589562678
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.0031766370519451686,
+      0.0006899975589562678
+    ],
+    "seed_within_fixed_partition": [
+      -0.0031766370519451686,
+      0.0006899975589562678
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0031766370519451686,
+      0.0006899975589562678
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only_low_corrected",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0012418518768577557,
+    "speaker_only_ci": [
+      -0.001856353457765384,
+      -0.000715719328643395
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.001856353457765384,
+      -0.000715719328643395
+    ],
+    "seed_within_fixed_partition": [
+      -0.001856353457765384,
+      -0.000715719328643395
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.001856353457765384,
+      -0.000715719328643395
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only_high",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.004762149631855591,
+    "speaker_only_ci": [
+      -0.0066903081805161965,
+      -0.002862486276212082
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.0066903081805161965,
+      -0.002862486276212082
+    ],
+    "seed_within_fixed_partition": [
+      -0.0066903081805161965,
+      -0.002862486276212082
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0066903081805161965,
+      -0.002862486276212082
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only_high_corrected",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0005656814866394502,
+    "speaker_only_ci": [
+      0.00023997980390846882,
+      0.0009778537765402458
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.00023997980390846882,
+      0.0009778537765402458
+    ],
+    "seed_within_fixed_partition": [
+      0.00023997980390846882,
+      0.0009778537765402458
+    ],
+    "partition_and_seed_sensitivity": [
+      0.00023997980390846882,
+      0.0009778537765402458
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_low",
+    "right_method": "full_affine_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0025498753219548526,
+    "speaker_only_ci": [
+      -0.004062419662916602,
+      -0.0010044469419471795
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.004062419662916602,
+      -0.0010044469419471795
+    ],
+    "seed_within_fixed_partition": [
+      -0.004062419662916602,
+      -0.0010044469419471795
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.004062419662916602,
+      -0.0010044469419471795
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_low_corrected",
+    "right_method": "full_affine_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -8.648371015619084e-05,
+    "speaker_only_ci": [
+      -0.0007656352445382897,
+      0.0005966008235628055
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.0007656352445382897,
+      0.0005966008235628055
+    ],
+    "seed_within_fixed_partition": [
+      -0.0007656352445382897,
+      0.0005966008235628055
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0007656352445382897,
+      0.0005966008235628055
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_high",
+    "right_method": "full_affine_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0035714572242990725,
+    "speaker_only_ci": [
+      -0.004743631524502121,
+      -0.0024101771969282995
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.004743631524502121,
+      -0.0024101771969282995
+    ],
+    "seed_within_fixed_partition": [
+      -0.004743631524502121,
+      -0.0024101771969282995
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.004743631524502121,
+      -0.0024101771969282995
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_high_corrected",
+    "right_method": "full_affine_natural",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0009144221104181785,
+    "speaker_only_ci": [
+      -0.001872546352679287,
+      -7.266952988544659e-05
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      -0.001872546352679287,
+      -7.266952988544659e-05
+    ],
+    "seed_within_fixed_partition": [
+      -0.001872546352679287,
+      -7.266952988544659e-05
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.001872546352679287,
+      -7.266952988544659e-05
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only_low",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.05956349232835516,
+    "speaker_only_ci": [
+      0.0544677038275559,
+      0.06478577560718024
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.0544677038275559,
+      0.06478577560718024
+    ],
+    "seed_within_fixed_partition": [
+      0.0544677038275559,
+      0.06478577560718024
+    ],
+    "partition_and_seed_sensitivity": [
+      0.0544677038275559,
+      0.06478577560718024
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only_natural",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.06087617721551719,
+    "speaker_only_ci": [
+      0.05562171949810753,
+      0.06618148090293224
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.05562171949810753,
+      0.06618148090293224
+    ],
+    "seed_within_fixed_partition": [
+      0.05562171949810753,
+      0.06618148090293224
+    ],
+    "partition_and_seed_sensitivity": [
+      0.05562171949810753,
+      0.06618148090293224
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only_high",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0561140275836616,
+    "speaker_only_ci": [
+      0.050446464801479574,
+      0.0619073116598464
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.050446464801479574,
+      0.0619073116598464
+    ],
+    "seed_within_fixed_partition": [
+      0.050446464801479574,
+      0.0619073116598464
+    ],
+    "partition_and_seed_sensitivity": [
+      0.050446464801479574,
+      0.0619073116598464
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_low",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0693671967345547,
+    "speaker_only_ci": [
+      0.06331259536276747,
+      0.07560542902091834
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.06331259536276747,
+      0.07560542902091834
+    ],
+    "seed_within_fixed_partition": [
+      0.06331259536276747,
+      0.07560542902091834
+    ],
+    "partition_and_seed_sensitivity": [
+      0.06331259536276747,
+      0.07560542902091834
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_natural",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.07191707205650956,
+    "speaker_only_ci": [
+      0.06558580287261447,
+      0.07842199062984385
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.06558580287261447,
+      0.07842199062984385
+    ],
+    "seed_within_fixed_partition": [
+      0.06558580287261447,
+      0.07842199062984385
+    ],
+    "partition_and_seed_sensitivity": [
+      0.06558580287261447,
+      0.07842199062984385
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_high",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.06834561483221048,
+    "speaker_only_ci": [
+      0.0616838312389378,
+      0.07519114958574324
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.0616838312389378,
+      0.07519114958574324
+    ],
+    "seed_within_fixed_partition": [
+      0.0616838312389378,
+      0.07519114958574324
+    ],
+    "partition_and_seed_sensitivity": [
+      0.0616838312389378,
+      0.07519114958574324
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_low",
+    "right_method": "intercept_only_low",
+    "metric": "normalized_average_precision",
+    "estimate": 0.009803704406199541,
+    "speaker_only_ci": [
+      0.006888574320224087,
+      0.012680505119476567
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.006888574320224087,
+      0.012680505119476567
+    ],
+    "seed_within_fixed_partition": [
+      0.006888574320224087,
+      0.012680505119476567
+    ],
+    "partition_and_seed_sensitivity": [
+      0.006888574320224087,
+      0.012680505119476567
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_natural",
+    "right_method": "intercept_only_natural",
+    "metric": "normalized_average_precision",
+    "estimate": 0.011040894840992369,
+    "speaker_only_ci": [
+      0.00795687094954557,
+      0.014167445661833658
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.00795687094954557,
+      0.014167445661833658
+    ],
+    "seed_within_fixed_partition": [
+      0.00795687094954557,
+      0.014167445661833658
+    ],
+    "partition_and_seed_sensitivity": [
+      0.00795687094954557,
+      0.014167445661833658
+    ]
+  },
+  {
+    "dataset": "librittsp",
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine_high",
+    "right_method": "intercept_only_high",
+    "metric": "normalized_average_precision",
+    "estimate": 0.012231587248548887,
+    "speaker_only_ci": [
+      0.009074369128368391,
+      0.015463800197629255
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 1,
+    "shared_seed_across_fixed_partitions": [
+      0.009074369128368391,
+      0.015463800197629255
+    ],
+    "seed_within_fixed_partition": [
+      0.009074369128368391,
+      0.015463800197629255
+    ],
+    "partition_and_seed_sensitivity": [
+      0.009074369128368391,
+      0.015463800197629255
+    ]
+  }
+]

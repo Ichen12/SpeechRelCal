@@ -1,0 +1,121 @@
+[
+  {
+    "published": "results/source/fig2_msp_speaker_equal_aggregate.csv",
+    "source": "results/EXP2-20260910-01/evaluation/speaker_equal_aggregate.csv",
+    "selection": "nAP aggregate only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig2_msp_paired_uncertainty.json",
+    "source": "results/EXP2-20260910-01/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig2_libri_speaker_equal_aggregate.csv",
+    "source": "results/EXP2-20260908-05/librittsp/evaluation/speaker_equal_aggregate.csv",
+    "selection": "nAP aggregate only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig2_libri_paired_uncertainty.json",
+    "source": "results/EXP2-20260908-05/librittsp/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/table1_msp_speaker_equal_aggregate.csv",
+    "source": "results/EXP2-20260910-02/evaluation/speaker_equal_aggregate.csv",
+    "selection": "nAP aggregate only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/table1_msp_paired_uncertainty.json",
+    "source": "results/EXP2-20260910-02/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/table1_libri_speaker_equal_aggregate.csv",
+    "source": "results/EXP2-20260909-01/librittsp/evaluation/speaker_equal_aggregate.csv",
+    "selection": "nAP aggregate only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/table1_libri_paired_uncertainty.json",
+    "source": "results/EXP2-20260909-01/librittsp/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig3a_msp_speaker_equal_aggregate.csv",
+    "source": "results/EXP2-20260910-03/evaluation/speaker_equal_aggregate.csv",
+    "selection": "nAP aggregate only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig3a_msp_paired_uncertainty.json",
+    "source": "results/EXP2-20260910-03/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig3a_libri_speaker_equal_aggregate.csv",
+    "source": "results/EXP2-20260908-04/librittsp/evaluation/speaker_equal_aggregate.csv",
+    "selection": "nAP aggregate only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig3a_libri_paired_uncertainty.json",
+    "source": "results/EXP2-20260908-04/librittsp/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig3b_msp_speaker_equal_aggregate.csv",
+    "source": "results/EXP2-20260910-04/msp/evaluation/speaker_equal_aggregate.csv",
+    "selection": "nAP aggregate only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig3b_msp_paired_uncertainty.json",
+    "source": "results/EXP2-20260910-04/msp/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig3b_libri_speaker_equal_aggregate.csv",
+    "source": "results/EXP2-20260909-06/librittsp/evaluation/speaker_equal_aggregate.csv",
+    "selection": "nAP aggregate only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig3b_libri_paired_uncertainty.json",
+    "source": "results/EXP2-20260909-06/librittsp/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/fig2_msp_atomic.csv",
+    "source": "results/EXP2-20260910-01/evaluation/atomic_metrics.csv",
+    "selection": "independent heldout calibration only"
+  },
+  {
+    "published": "results/source/fig2_libri_atomic.csv",
+    "source": "results/EXP2-20260908-05/librittsp/calibration/evaluation_atomic_metrics.csv"
+  },
+  {
+    "published": "results/source/prior_findings.json",
+    "source": "results/EXP2-20260910-05/findings.json"
+  },
+  {
+    "published": "results/source/prior_recovery.csv",
+    "source": "results/EXP2-20260910-05/gain_recovery.csv"
+  },
+  {
+    "published": "results/source/full_state_auroc.csv",
+    "source": "results/EXP2-20260910-06/paired_auroc.csv"
+  },
+  {
+    "published": "results/source/query_statistics.csv",
+    "source": "results/EXP2-20260910-07/query_statistics.csv"
+  },
+  {
+    "published": "results/source/libri_budget_observations.json",
+    "source": "results/EXP2-20260908-04/librittsp/evaluation/budget_observations.json"
+  },
+  {
+    "published": "results/source/prior_msp_paired_uncertainty.json",
+    "source": "results/EXP2-20260910-05/msp/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  },
+  {
+    "published": "results/source/prior_librittsp_paired_uncertainty.json",
+    "source": "results/EXP2-20260910-05/librittsp/evaluation/paired_uncertainty.json",
+    "selection": "nAP contrasts only; Figure 2 MSP restricted to independent heldout calibration"
+  }
+]

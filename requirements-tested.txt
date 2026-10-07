@@ -1,0 +1,8 @@
+# Release verification environment; install the matching CPU/CUDA torch build separately.
+numpy==2.5.2
+scipy==1.17.1
+pandas==2.3.3
+scikit-learn==1.8.0
+torch==2.7.1
+PyYAML==6.0.3
+pytest==9.1.1

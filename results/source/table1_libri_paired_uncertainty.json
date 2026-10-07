@@ -1,0 +1,314 @@
+[
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "standardized_relation_deepsets",
+    "right_method": "standardized_deepsets",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0366023423825554,
+    "speaker_only_ci": [
+      0.032892357003519265,
+      0.04042510289786264
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.023982503528394206,
+      0.045963517383161887
+    ],
+    "seed_within_fixed_partition": [
+      0.026907201098886068,
+      0.044800127469952544
+    ],
+    "partition_and_seed_sensitivity": [
+      0.020429518040641456,
+      0.05824963936094956
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "calibrated_relation_deepsets",
+    "right_method": "calibrated_deepsets",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0036335157926144146,
+    "speaker_only_ci": [
+      0.002551816375407472,
+      0.004791405693944081
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.0023564561717637237,
+      0.0049834754597490585
+    ],
+    "seed_within_fixed_partition": [
+      0.002230258233158703,
+      0.005066731404361915
+    ],
+    "partition_and_seed_sensitivity": [
+      0.0006074730626049595,
+      0.00658893083520366
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "calibrated_relation_deepsets",
+    "right_method": "standardized_relation_deepsets",
+    "metric": "normalized_average_precision",
+    "estimate": 0.01435606220386863,
+    "speaker_only_ci": [
+      0.011487034614404638,
+      0.017162307310401866
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.0062168687744125865,
+      0.02449579730513528
+    ],
+    "seed_within_fixed_partition": [
+      0.0056995290830667055,
+      0.024043831855466297
+    ],
+    "partition_and_seed_sensitivity": [
+      0.0054383683092550745,
+      0.02411245313697139
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "calibrated_product",
+    "right_method": "standardized_relation_deepsets",
+    "metric": "normalized_average_precision",
+    "estimate": 0.010913309029311365,
+    "speaker_only_ci": [
+      0.007529467105255,
+      0.014234051078018338
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.002563358979562038,
+      0.020708737087258854
+    ],
+    "seed_within_fixed_partition": [
+      0.002502441823952774,
+      0.020445344895733016
+    ],
+    "partition_and_seed_sensitivity": [
+      0.0005356021181524953,
+      0.021083970656417213
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "calibrated_relation_deepsets",
+    "right_method": "calibrated_product",
+    "metric": "normalized_average_precision",
+    "estimate": 0.003442753174557265,
+    "speaker_only_ci": [
+      0.002071079354657666,
+      0.004912022276744785
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.0019133174905409747,
+      0.005089677342138937
+    ],
+    "seed_within_fixed_partition": [
+      0.0016253296321935425,
+      0.005631839584042678
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0009615026772898832,
+      0.008810987803776087
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "standardized_relation_deepsets",
+    "right_method": "standardized_product",
+    "metric": "normalized_average_precision",
+    "estimate": 0.14176563271217768,
+    "speaker_only_ci": [
+      0.13481050414230092,
+      0.14879392893406226
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.13016471033721047,
+      0.15268418878122303
+    ],
+    "seed_within_fixed_partition": [
+      0.13073813687548738,
+      0.15239377336418128
+    ],
+    "partition_and_seed_sensitivity": [
+      0.12205404229921896,
+      0.16231385459754769
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "standardized_relation_deepsets",
+    "right_method": "standardized_deepsets",
+    "metric": "normalized_average_precision",
+    "estimate": 0.01563606736728293,
+    "speaker_only_ci": [
+      0.01275419934590493,
+      0.0186119063703561
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.010833407481813696,
+      0.020191198902745264
+    ],
+    "seed_within_fixed_partition": [
+      0.010921975780633614,
+      0.02030167378710976
+    ],
+    "partition_and_seed_sensitivity": [
+      0.00581019558609195,
+      0.027964085216862517
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "calibrated_relation_deepsets",
+    "right_method": "calibrated_deepsets",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0004966241678166874,
+    "speaker_only_ci": [
+      -0.0009091177688382053,
+      0.0019643342758054504
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      -0.0016181858309054235,
+      0.002735734211538812
+    ],
+    "seed_within_fixed_partition": [
+      -0.0015004344893554944,
+      0.00235365261725391
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0023317625668614075,
+      0.002666543382896883
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "calibrated_relation_deepsets",
+    "right_method": "standardized_relation_deepsets",
+    "metric": "normalized_average_precision",
+    "estimate": 0.009568460278546803,
+    "speaker_only_ci": [
+      0.007326765198378361,
+      0.011845513570929923
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.005095114974548323,
+      0.014267202441623755
+    ],
+    "seed_within_fixed_partition": [
+      0.005686864997745535,
+      0.013386678061483467
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0017255576202415532,
+      0.019115648909425777
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "calibrated_product",
+    "right_method": "standardized_relation_deepsets",
+    "metric": "normalized_average_precision",
+    "estimate": 0.009221927650343326,
+    "speaker_only_ci": [
+      0.005950990344166412,
+      0.012424405632730656
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.0054235635391462,
+      0.013229579694757231
+    ],
+    "seed_within_fixed_partition": [
+      0.005076884337575984,
+      0.01329680426992104
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0007829025018431061,
+      0.018904234308152974
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "calibrated_relation_deepsets",
+    "right_method": "calibrated_product",
+    "metric": "normalized_average_precision",
+    "estimate": 0.0003465326282034762,
+    "speaker_only_ci": [
+      -0.001979127382268017,
+      0.0027354855085578145
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      -0.0028168560258075705,
+      0.0033716913274563043
+    ],
+    "seed_within_fixed_partition": [
+      -0.0023787874340013134,
+      0.0029881241701935554
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.003164699345856744,
+      0.003543379454439763
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "standardized_relation_deepsets",
+    "right_method": "standardized_product",
+    "metric": "normalized_average_precision",
+    "estimate": 0.062202036531737795,
+    "speaker_only_ci": [
+      0.05704822718877903,
+      0.06748389232019734
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.05655251012010558,
+      0.0679538111866204
+    ],
+    "seed_within_fixed_partition": [
+      0.056575266607685054,
+      0.06808586435421303
+    ],
+    "partition_and_seed_sensitivity": [
+      0.05199799850092385,
+      0.07306501013388034
+    ]
+  }
+]

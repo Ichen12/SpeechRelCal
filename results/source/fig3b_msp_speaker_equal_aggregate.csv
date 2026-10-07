@@ -1,0 +1,7 @@
+method,regime,normalized_average_precision
+matched_relation_deepsets,heldout_pair_tuple,0.2599806584377945
+matched_relation_deepsets,zero_shot_quadruple,0.1170897192272901
+matched_relation_deepsets,zero_shot_triple,0.1667064700281446
+product,heldout_pair_tuple,0.2606731453104743
+product,zero_shot_quadruple,0.1175868480879871
+product,zero_shot_triple,0.1689733341905214

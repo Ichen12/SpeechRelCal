@@ -1,0 +1,48 @@
+{
+  "source_commit": "159a11f3b3faf2e08ea95e1ed0d9494b0cb9ccd0",
+  "extracted_symbols": [
+    {
+      "file": "scripts/run_final_learned_suite.py",
+      "symbol": "PositiveLogLinear"
+    },
+    {
+      "file": "scripts/run_strict_source_to_msp_composition_transfer.py",
+      "symbol": "DeepSets"
+    },
+    {
+      "file": "scripts/run_relation_identity_control.py",
+      "symbol": "RelationAwareDeepSets"
+    },
+    {
+      "file": "scripts/event_offset_controls.py",
+      "symbol": "fit_event"
+    },
+    {
+      "file": "src/speech_repr_core/relation_function_audit.py",
+      "symbol": "fit_monotonic_logit"
+    },
+    {
+      "file": "src/speech_repr_core/compositional_retrieval_benchmark.py",
+      "symbol": "average_precision"
+    },
+    {
+      "file": "src/speech_repr_core/atomic_relation_calibration.py",
+      "symbol": "calibration_metrics"
+    },
+    {
+      "file": "scripts/run_composition_result_revision.py",
+      "symbol": "train_model"
+    },
+    {
+      "file": "scripts/finalize_heldout_composer.py",
+      "symbol": "paired"
+    }
+  ],
+  "adaptations": [
+    "Generic file-based CLI replaces experiment-specific orchestration.",
+    "Training permits zero epochs for the query-matched control; zero-update losses are null.",
+    "Full-state ordinal calibration retains sklearn LogisticRegression defaults (C=1, L2).",
+    "Core fit/model/optimizer operations are retained; audio preprocessing and original panel construction are not bundled.",
+    "Bootstrap draw count is an explicit argument instead of an experiment configuration global."
+  ]
+}

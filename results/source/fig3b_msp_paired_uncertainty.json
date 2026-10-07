@@ -1,0 +1,71 @@
+[
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "matched_relation_deepsets",
+    "right_method": "product",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0006924868726797928,
+    "speaker_count": 256,
+    "partition_count": 3,
+    "source_split_count": 3,
+    "initialization_seed_count": 3,
+    "speaker_only_ci": [
+      -0.0010833337562422413,
+      -0.0003193426663885479
+    ],
+    "shared_seed_across_fixed_partitions": [
+      -0.0014821667849698524,
+      -6.52637062047272e-05
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.001789753879576532,
+      7.842354580951467e-05
+    ]
+  },
+  {
+    "regime": "zero_shot_quadruple",
+    "left_method": "matched_relation_deepsets",
+    "right_method": "product",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0004971288606969396,
+    "speaker_count": 256,
+    "partition_count": 3,
+    "source_split_count": 3,
+    "initialization_seed_count": 3,
+    "speaker_only_ci": [
+      -0.0021084909253300563,
+      0.001217665121449059
+    ],
+    "shared_seed_across_fixed_partitions": [
+      -0.00294307057106477,
+      0.0018785679187618514
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.002967557975513928,
+      0.001890219136934017
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "matched_relation_deepsets",
+    "right_method": "product",
+    "metric": "normalized_average_precision",
+    "estimate": -0.0022668641623768424,
+    "speaker_count": 256,
+    "partition_count": 3,
+    "source_split_count": 3,
+    "initialization_seed_count": 3,
+    "speaker_only_ci": [
+      -0.0032592044448604145,
+      -0.001304541621959147
+    ],
+    "shared_seed_across_fixed_partitions": [
+      -0.0038294614786331953,
+      -0.0008421127081583053
+    ],
+    "partition_and_seed_sensitivity": [
+      -0.0038362522237394264,
+      -0.000867657582893716
+    ]
+  }
+]

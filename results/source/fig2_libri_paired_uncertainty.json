@@ -1,0 +1,314 @@
+[
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "slope_only",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.05329662760529928,
+    "speaker_only_ci": [
+      0.0474577104046008,
+      0.05872235085616366
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.0474577104046008,
+      0.05872235085616366
+    ],
+    "seed_within_fixed_partition": [
+      0.0474577104046008,
+      0.05872235085616366
+    ],
+    "partition_and_seed_sensitivity": [
+      0.03391322606070924,
+      0.07963294752886589
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.13965673485129929,
+    "speaker_only_ci": [
+      0.13214466347645654,
+      0.14733163989817286
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.13214466347645654,
+      0.14733163989817286
+    ],
+    "seed_within_fixed_partition": [
+      0.13214466347645654,
+      0.14733163989817286
+    ],
+    "partition_and_seed_sensitivity": [
+      0.12314166121958346,
+      0.16000979816858707
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.1529048969909302,
+    "speaker_only_ci": [
+      0.14455002537819603,
+      0.16139911969008153
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.14455002537819603,
+      0.16139911969008153
+    ],
+    "seed_within_fixed_partition": [
+      0.14455002537819603,
+      0.16139911969008153
+    ],
+    "partition_and_seed_sensitivity": [
+      0.13596919553091324,
+      0.17331955118034578
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "intercept_only",
+    "right_method": "slope_only",
+    "metric": "normalized_average_precision",
+    "estimate": 0.08636010724599999,
+    "speaker_only_ci": [
+      0.0799753033593445,
+      0.09282366865183411
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.0799753033593445,
+      0.09282366865183411
+    ],
+    "seed_within_fixed_partition": [
+      0.0799753033593445,
+      0.09282366865183411
+    ],
+    "partition_and_seed_sensitivity": [
+      0.07159527669430464,
+      0.09892306395317377
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine",
+    "right_method": "intercept_only",
+    "metric": "normalized_average_precision",
+    "estimate": 0.013248162139630948,
+    "speaker_only_ci": [
+      0.010743642730534235,
+      0.01586843962879028
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.010743642730534235,
+      0.01586843962879028
+    ],
+    "seed_within_fixed_partition": [
+      0.010743642730534235,
+      0.01586843962879028
+    ],
+    "partition_and_seed_sensitivity": [
+      0.010238950792962602,
+      0.01603627917813425
+    ]
+  },
+  {
+    "regime": "heldout_pair_tuple",
+    "left_method": "full_affine",
+    "right_method": "slope_only",
+    "metric": "normalized_average_precision",
+    "estimate": 0.09960826938563093,
+    "speaker_only_ci": [
+      0.09216885399944642,
+      0.10712166468962411
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.09216885399944642,
+      0.10712166468962411
+    ],
+    "seed_within_fixed_partition": [
+      0.09216885399944642,
+      0.10712166468962411
+    ],
+    "partition_and_seed_sensitivity": [
+      0.0835820236927657,
+      0.11327875972462732
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "slope_only",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.029027431255423574,
+    "speaker_only_ci": [
+      0.02458573637443688,
+      0.03347208523015323
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.02458573637443688,
+      0.03347208523015323
+    ],
+    "seed_within_fixed_partition": [
+      0.02458573637443688,
+      0.03347208523015323
+    ],
+    "partition_and_seed_sensitivity": [
+      0.02458573637443688,
+      0.03347208523015323
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.06087617721551719,
+    "speaker_only_ci": [
+      0.05562171949810753,
+      0.06618148090293224
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.05562171949810753,
+      0.06618148090293224
+    ],
+    "seed_within_fixed_partition": [
+      0.05562171949810753,
+      0.06618148090293224
+    ],
+    "partition_and_seed_sensitivity": [
+      0.05562171949810753,
+      0.06618148090293224
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine",
+    "right_method": "sigmoid",
+    "metric": "normalized_average_precision",
+    "estimate": 0.07191707205650956,
+    "speaker_only_ci": [
+      0.06558580287261448,
+      0.07842199062984385
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.06558580287261448,
+      0.07842199062984385
+    ],
+    "seed_within_fixed_partition": [
+      0.06558580287261448,
+      0.07842199062984385
+    ],
+    "partition_and_seed_sensitivity": [
+      0.06558580287261448,
+      0.07842199062984385
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "intercept_only",
+    "right_method": "slope_only",
+    "metric": "normalized_average_precision",
+    "estimate": 0.031848745960093613,
+    "speaker_only_ci": [
+      0.026796881104224363,
+      0.036943753928920325
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.026796881104224363,
+      0.036943753928920325
+    ],
+    "seed_within_fixed_partition": [
+      0.026796881104224363,
+      0.036943753928920325
+    ],
+    "partition_and_seed_sensitivity": [
+      0.026796881104224363,
+      0.036943753928920325
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine",
+    "right_method": "intercept_only",
+    "metric": "normalized_average_precision",
+    "estimate": 0.011040894840992369,
+    "speaker_only_ci": [
+      0.007956870949545572,
+      0.014167445661833658
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.007956870949545572,
+      0.014167445661833658
+    ],
+    "seed_within_fixed_partition": [
+      0.007956870949545572,
+      0.014167445661833658
+    ],
+    "partition_and_seed_sensitivity": [
+      0.007956870949545572,
+      0.014167445661833658
+    ]
+  },
+  {
+    "regime": "zero_shot_triple",
+    "left_method": "full_affine",
+    "right_method": "slope_only",
+    "metric": "normalized_average_precision",
+    "estimate": 0.04288964080108598,
+    "speaker_only_ci": [
+      0.037342467564723,
+      0.04855465588113539
+    ],
+    "speaker_count": 256,
+    "partition_count": 3,
+    "seed_count": 3,
+    "shared_seed_across_fixed_partitions": [
+      0.037342467564723,
+      0.04855465588113539
+    ],
+    "seed_within_fixed_partition": [
+      0.037342467564723,
+      0.04855465588113539
+    ],
+    "partition_and_seed_sensitivity": [
+      0.037342467564723,
+      0.04855465588113539
+    ]
+  }
+]

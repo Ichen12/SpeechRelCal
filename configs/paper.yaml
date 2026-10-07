@@ -1,0 +1,59 @@
+# Reference settings, not an experiment scheduler. See docs/reproduction.md.
+attributes:
+  msp: [speaker, arousal, valence, dominance]
+  libri: [speaker, pitch, rate]
+thresholds:
+  msp: {arousal: 0.075, valence: 0.075, dominance: 0.075}
+  libri: {pitch: 0.10, rate: 0.50}
+calibration:
+  pair_cap: 2000000
+  msp_pair_seed: 2026090581
+  libri_ordinal_pair_seed: 2026090602
+  libri_speaker_pair_seed: 2026090410
+  event_log_slope_bounds: [-6, 6]
+  event_optimizer: L-BFGS-B
+  event_maxiter: 500
+  event_ftol: 1.0e-12
+  event_gtol: 1.0e-9
+  full_state_ordinal_C: 1.0
+  full_state_ordinal_maxiter: 1000
+  epsilon: 1.0e-7
+readout: {model: Ridge, alpha: 10.0, fit_dtype: float32}
+seeds:
+  msp_panel: 2026090305
+  libri_panel: 2026090404
+  msp_source_splits: [2026090902, 2026090903, 2026090904]
+  msp_initializations: [2026090411, 2026090412, 2026090413]
+  libri_initializations: [2026090404, 2026090405, 2026090406]
+  source_validation: 2026090708
+  budget_subset: 2026090804
+selection:
+  validation_fraction: 0.20
+  widths: [16, 64]
+  learning_rates: [0.001, 0.003]
+  epochs: [8, 16, 32]
+  objective: uniform_positive_cross_entropy
+  optimizer: AdamW
+  weight_decay: 0.01
+  query_batch_size: 4
+  checkpoint_every_updates: 100
+  final_refit: all_budgeted_source_queries
+matched_query_control:
+  weight_decay: 0.0001
+  epochs: [0, 8, 16, 32]
+  training_templates: same_attribute_counts_and_relation_combinations_as_evaluation
+budgets: [0.01, 0.05, 0.10, 0.25, 1.0]
+partitions:
+  msp:
+    diagonal: {seen: ['++', '--'], heldout: ['+-', '-+']}
+    anti_diagonal: {seen: ['+-', '-+'], heldout: ['++', '--']}
+    direction_shift: {seen: ['++', '+-'], heldout: ['-+', '--']}
+  libri:
+    diagonal: {seen: ['++', '--'], heldout: ['+-', '-+']}
+    anti_diagonal: {seen: ['+-', '-+'], heldout: ['++', '--']}
+    direction_shift: {seen: ['++', '-+'], heldout: ['+-', '--']}
+statistics:
+  aggregation: equal_reference_speaker
+  bootstrap_samples: 10000
+  primary: speaker_source_split_initialization_resampling_fixed_partitions
+  sensitivity: additionally_resample_relation_partitions

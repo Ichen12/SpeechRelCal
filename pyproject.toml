@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speechrelcal"
+version = "0.1.0"
+description = "Score calibration for multi-attribute speech relation retrieval"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2,<3", "scipy>=1.15,<2", "pandas>=2.2,<3", "scikit-learn>=1.5,<2", "torch>=2.7,<2.8", "pyyaml>=6,<7"]
+
+[project.optional-dependencies]
+test = ["pytest>=8,<10"]
+
+[project.scripts]
+speechrelcal = "speechrelcal.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
