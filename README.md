@@ -1,112 +1,104 @@
 # SpeechRelCal
 
-Code and final results for **Beyond Rankings: Score Scales Shape Multi-Attribute Speech Retrieval**.
+Official implementation of **Beyond Rankings: Score Scales Shape Multi-Attribute Speech Retrieval**.
 
-Chen Li, Jiale Cao, Zhihao Tang, Peiji Yang, Zhisheng Wang, Jianxing Yu, and Jian Yin.
+**Chen Li, Jiale Cao, Zhihao Tang, Peiji Yang, Zhisheng Wang, Jianxing Yu, and Jian Yin**
 
-Given a reference utterance, a query can ask for the same speaker, higher pitch, and slower speaking rate. SpeechRelCal examines how the numerical scales of individual relation scores affect retrieval when those conditions are combined.
+## Motivation
 
-With frozen speech experts, rank-preserving calibration improves Product retrieval by **5.03–15.29 nAP percentage points**. Intercept-only calibration recovers **84.6%–98.5%** of that gain. After scale alignment, learned composers provide smaller, condition-dependent gains. Product uses no joint-query supervision; attribute readouts and calibration still require single-attribute supervision.
+Given a reference utterance, a multi-attribute query may ask for the **same speaker, higher pitch, and slower speaking rate**. Each condition is scored by a speech attribute model, and retrieval requires a candidate to satisfy all conditions simultaneously.
 
-## Release scope
+Strong rankings for individual attributes do not necessarily produce a strong combined ranking. Models trained for different attributes can assign scores on different numerical scales. A learned composer may therefore improve retrieval partly by adapting to these scale differences. Our work separates **relation-score scale alignment** from **composition learning** to examine their respective contributions.
 
-This repository provides the calibration and composition code, a portable training/evaluation interface for user-prepared scores, final aggregate results, and the settings needed to interpret and reproduce the reported comparisons. It does not distribute datasets, audio, embeddings, pretrained speech models, or the full experiment orchestration history.
+## Method
 
-There are two separately fitted interfaces:
+We keep speech experts fixed, calibrate their relation scores using single-attribute labels, and combine the resulting probabilities with **Product**:
 
-- **Figure 2:** positive affine event-sigmoid calibration, with fixed-sigmoid, slope-only, intercept-only, and full-affine controls. These preserve within-relation rankings.
-- **Table 1 and Figure 3:** full-state calibration, followed by Product, positive Log-linear, DeepSets, or relation-aware DeepSets (**DeepSets+R**). No general rank-preservation guarantee is asserted for the full-state interface.
+$$
+S_{\mathrm{Product}}(r,x,q)=\sum_{e\in q}\log\max\{p_e(r,x),10^{-7}\}.
+$$
 
-## Installation
+Here, $p_e(r,x)$ is the probability that candidate $x$ satisfies relation $e$ relative to reference $r$. Product requires no joint-query supervision at the composition stage.
 
-Use Python 3.12 and a separate environment. Install a PyTorch 2.7 build appropriate for your hardware, then:
+The study has three parts:
+
+1. **Isolate score-scale effects.** Compare fixed sigmoid, slope-only, intercept-only, and full-affine event calibration. Positive affine mappings preserve single-relation rankings, allowing us to measure the effect of score scales on compositional retrieval.
+2. **Examine slope and intercept contributions.** Measure how much of the full-affine retrieval gain can be recovered by adjusting relation-specific intercepts alone.
+3. **Re-evaluate composition learning.** Feed the same multi-state calibrated probabilities to Product, positive Log-linear, DeepSets, and relation-aware DeepSets (**DeepSets+R**), then compare their performance across supervision budgets and query settings.
+
+The event-level calibration used for rank-preserving analysis and the multi-state calibration used for composer comparisons are fitted separately.
+
+## Experiments and findings
+
+We evaluate two speech relation retrieval settings with speaker-disjoint fitting, calibration, and evaluation data:
+
+| Dataset | Attributes | Frozen speech models |
+|---|---|---|
+| MSP-Podcast | Speaker, arousal, valence, dominance | ECAPA-TDNN; ExHuBERT with Ridge attribute readouts |
+| LibriTTS-P | Speaker, pitch, speaking rate | ECAPA-TDNN; WavLM Base+ with Ridge attribute readouts |
+
+The main composer experiments train on seen two-attribute relation combinations and evaluate held-out combinations and queries with more attributes. The primary metric is normalized average precision (**nAP**), aggregated with equal weight per reference speaker.
+
+### Score scales affect retrieval even when individual rankings stay fixed
+
+Full-affine calibration improves Product by **5.03–15.29 nAP percentage points** across both datasets and all evaluated query sizes. Single-relation rankings remain unchanged. Mean ECE decreases from **0.254 to 0.020** on MSP-Podcast and from **0.278 to 0.006** on LibriTTS-P.
+
+### Intercept adjustment recovers most of the calibration gain
+
+Intercept-only calibration recovers **84.6%–98.5%** of the full-affine gain and outperforms slope-only calibration in every setting. Under positive-to-negative calibration weights of 0.25, 1, and 4, the recovered fraction remains **82.1%–98.5%**.
+
+### Scale alignment narrows the advantage of learned composers
+
+The following results reproduce Table 1 of the paper. **Std.** denotes fixed-sigmoid inputs; **Cal.** denotes multi-state calibrated probabilities. Values are nAP (%), and column numbers indicate query attribute counts.
+
+| Input | Composer | MSP-2 | MSP-3 | MSP-4 | Libri-2 | Libri-3 |
+|---|---|---:|---:|---:|---:|---:|
+| Std. | Product | 17.70 | 9.85 | 6.77 | 27.25 | 17.72 |
+| Std. | Log-linear | 15.48 | 9.59 | 6.35 | 28.64 | 19.08 |
+| Std. | DeepSets | 23.29 | 15.25 | 10.29 | 37.76 | 22.38 |
+| Std. | DeepSets+R | 21.22 | 14.57 | 10.05 | 41.42 | 23.94 |
+| Cal. | Product | 26.07 | 16.90 | 11.76 | 42.51 | 24.86 |
+| Cal. | Log-linear | 25.83 | 16.62 | 11.71 | 42.83 | 24.99 |
+| Cal. | DeepSets | 25.86 | 16.70 | 11.83 | 42.49 | 24.85 |
+| Cal. | DeepSets+R | 25.87 | 16.67 | 11.75 | 42.86 | 24.90 |
+
+DeepSets substantially outperforms Product with Std. inputs. After calibration, their absolute performance differences shrink to approximately **0.21 pp or less**. Calibrated Product also exceeds standardized DeepSets by **1.47–4.75 pp**.
+
+Additional composition learning provides small, setting-dependent gains. Across joint-query supervision budgets of **1%, 5%, 10%, 25%, and 100%**, Log-linear's gain on two-attribute LibriTTS-P queries reaches approximately **0.32 pp**. With query-matched training, DeepSets+R gains approximately **0.55 pp** on both two- and three-attribute LibriTTS-P queries, while MSP-Podcast shows no positive gain. These findings support controlling relation-score scales when assessing the added value of learned composition.
+
+Full-precision results and confidence intervals are available in [Table 1](results/table1.csv), [Figure 2](results/fig2.csv), [Figure 3(a)](results/fig3a.csv), and [Figure 3(b)](results/fig3b.csv).
+
+## Getting started
+
+Use Python 3.12 and PyTorch 2.7, then install the package:
 
 ```bash
 python -m pip install -e .
 ```
 
-The core operates on scores and needs no audio-model dependencies. The versions used for release verification are recorded in [requirements-tested.txt](requirements-tested.txt). They describe this release check, not a complete lockfile of the historical audio-extraction environments.
-
-## Check the paper results
-
-No dataset is needed:
+Fit relation calibrators and evaluate Product on prepared scores:
 
 ```bash
-python scripts/check_paper_results.py
-```
-
-This checks all 40 Table 1 values, all 50 Figure 3(a) values and significance marks, the released figure estimates and confidence intervals against their original aggregates, and key numerical statements in the text. The final-PDF fingerprint and rounded references are in [paper_reference.json](results/paper_reference.json); the check report is [paper_check.json](results/paper_check.json).
-
-| Result | Released file |
-|---|---|
-| Table 1: input scale × composer, nAP (%) | [table1.csv](results/table1.csv) |
-| Figure 2: gains over fixed sigmoid, pp | [fig2.csv](results/fig2.csv) |
-| Figure 3(a): supervision budgets, pp | [fig3a.csv](results/fig3a.csv) |
-| Figure 3(b): query-matched training, pp | [fig3b.csv](results/fig3b.csv) |
-| Calibration quality, prior sensitivity, AUROC, query counts | [source/](results/source/) |
-| Original experiment/result mapping | [provenance.json](results/provenance.json) |
-
-For example, the calibrated Product nAP values in Table 1 are:
-
-| MSP: 2 attributes | MSP: 3 | MSP: 4 | LibriTTS-P: 2 | LibriTTS-P: 3 |
-|---:|---:|---:|---:|---:|
-| 26.07 | 16.90 | 11.76 | 42.51 | 24.86 |
-
-Checking these aggregates does **not** rerun the audio experiments. Exact end-to-end reproduction also requires the original corpus versions, panel membership and ordering, extracted features, and fitted readouts. These assets are not bundled.
-
-## Run on prepared scores
-
-Prepare calibration pairs and query files according to [the input specification](docs/input_format.md). Data acquisition, speech-feature extraction, and Ridge readouts are described in [the reproduction notes](docs/reproduction.md). The CLI starts from their raw relation scores.
-
-```bash
-# Fit both interfaces using only the independent calibration split.
 speechrelcal calibrate --pairs local_data/calibration.csv --output outputs/calibration.json
 
-# Prepare the common calibrated inputs for Product, Log-linear, and DeepSets.
 speechrelcal prepare --queries local_data/evaluation_raw.json \
   --calibration outputs/calibration.json --interface full_state \
   --output outputs/evaluation
 
-# Product has no composition training step.
 speechrelcal evaluate --queries outputs/evaluation/queries.json --output outputs/product
 ```
 
-Use `--interface sigmoid` for Std. inputs; `slope_only`, `intercept_only`, and `full_affine` run the Figure 2 controls. Add `--relation-aware` during preparation when using DeepSets+R.
+- [Input format](docs/input_format.md): calibration pairs, raw scores, and query files.
+- [Training and evaluation](docs/usage.md): composer selection, training, and evaluation commands.
+- [Reproduction notes](docs/reproduction.md): data preparation, frozen experts, splits, and statistical procedures.
+- [Paper configuration](configs/paper.yaml): thresholds, seeds, supervision budgets, and optimization settings.
+- [Tested dependencies](requirements-tested.txt): package versions used for verification.
 
-Prepare speaker-disjoint source fit and validation queries with the same frozen calibration. Select hyperparameters on source data:
-
-```bash
-speechrelcal select --queries local_data/source_fit/queries.json \
-  --validation local_data/source_validation/queries.json \
-  --model deepsets --seed 2026090411 --output outputs/selection
-```
-
-The result is `selection.json`. Refit on **all budgeted source queries** using its selected width, learning rate, and epoch count. For example, if selection returns width 16, learning rate 0.001, and 8 epochs:
+To check the published results against the paper:
 
 ```bash
-speechrelcal train --queries local_data/source_all/queries.json \
-  --model deepsets --width 16 --lr 0.001 --epochs 8 --seed 2026090411 \
-  --output outputs/refit
-speechrelcal evaluate --queries outputs/evaluation/queries.json \
-  --checkpoint outputs/refit/model.pt --output outputs/deepsets
+python scripts/check_paper_results.py
 ```
-
-The other model names are `log_linear` and `deepsets_r`. Repeat the refit for the dataset's three initialization seeds. Checkpoints save model, optimizer, query order, cursor, and sampler state every 100 updates and at completion. Repeating `train` with the **same configuration and output directory** resumes it; use a new output directory for a different configuration. Use a fresh selection directory for each selection run.
-
-[configs/paper.yaml](configs/paper.yaml) records dataset-specific seeds, thresholds, partitions, and optimization settings. It is a reference configuration, not an automatic experiment launcher. In particular, Figure 3(b) uses weight decay `0.0001` and epoch candidates `0 8 16 32`, whereas the main comparisons use `0.01` and `8 16 32`.
-
-## Reproduction details
-
-See [docs/reproduction.md](docs/reproduction.md) for candidate pools, query filtering, supervision budgets, statistical aggregation, and implementation details beyond the paper's compact description. These include inclusive threshold boundaries in the original experiments and the regularization used by the full-state ordinal calibrator.
-
-Core verification:
-
-```bash
-python -m pip install -e '.[test]'
-python -m pytest -q
-```
-
-The tests exercise calibration/ranking behavior, the multi-positive objective, checkpoint recovery, and the portable CLI. They do not train speech encoders or recreate the full corpus experiments.
 
 ## Citation
 
@@ -119,8 +111,6 @@ The tests exercise calibration/ranking behavior, the multi-positive objective, c
 }
 ```
 
-This citation intentionally omits an unverified publication year, DOI, and acceptance status. Dataset and pretrained-model terms remain those of their respective providers.
-
 ## License
 
-The code and accompanying documentation are released under the [MIT License](LICENSE). Datasets and pretrained models are not included and remain subject to their original terms.
+[MIT License](LICENSE).
