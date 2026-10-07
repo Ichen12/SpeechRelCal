@@ -120,3 +120,7 @@ The tests exercise calibration/ranking behavior, the multi-positive objective, c
 ```
 
 This citation intentionally omits an unverified publication year, DOI, and acceptance status. Dataset and pretrained-model terms remain those of their respective providers.
+
+## License
+
+The code and accompanying documentation are released under the [MIT License](LICENSE). Datasets and pretrained models are not included and remain subject to their original terms.
